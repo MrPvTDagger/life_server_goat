@@ -16,6 +16,7 @@ for "_i" from 0 to 1 step 0 do {
         _protect = false;
         _veh = _x;
         _vehicleClass = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "vehicleClass");
+		_units = {(_x distance _veh < 20000)} count playableUnits;
         _fuel = 1;
 
         if (!isNil {_veh getVariable "NPC"} && {_veh getVariable "NPC"}) then {_protect = true;};
