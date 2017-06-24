@@ -270,7 +270,7 @@ compileFinal "
             if (isNil ""_loc"") then {_loc = ""Unknown"";};
             hint parseText format [""<t color='#316dff'><t size='2'><t align='center'>New Dispatch<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>All Officers<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><t color='#33CC33'>Coords: <t color='#ffffff'>%2<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%3"",_from,_loc,_msg];
 
-            [""PoliceDispatch"",[format [""A New Police Report From: %1"",_from]]] call bis_fnc_showNotification;
+            [""PoliceDispatch"",[format [""GOAT Message From: %1"",_from]]] call bis_fnc_showNotification;
             systemChat _message;
         };
 
@@ -317,7 +317,7 @@ compileFinal "
             _message = format [""!!! EMS REQUEST: %1"",_msg];
             hint parseText format [""<t color='#FFCC00'><t size='2'><t align='center'>EMS Request<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>You<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><t color='#33CC33'>Coords: <t color='#ffffff'>%2<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%3"",_from,_loc,_msg];
 
-            [""TextMessage"",[format [""EMS Request from %1"",_from]]] call bis_fnc_showNotification;
+            [""TextMessage"",[format [""Medic Request from %1"",_from]]] call bis_fnc_showNotification;
         };
     };
 ";

@@ -126,8 +126,6 @@ master_group attachTo[bank_obj,[0,0,0]];
     };
 } forEach allUnits;
 
-[8,true,12] execFSM "\life_server\FSM\timeModule.fsm";
-
 life_adminLevel = 0;
 life_medicLevel = 0;
 life_copLevel = 0;

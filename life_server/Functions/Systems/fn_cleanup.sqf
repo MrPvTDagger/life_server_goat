@@ -60,7 +60,7 @@ for "_i" from 0 to 1 step 0 do {
         };
     } forEach (allMissionObjects "Thing");
 
-    uiSleep (2 * 60);
+    uiSleep (5 * 60);
     {
         deleteVehicle _x;
     } forEach (allMissionObjects "GroundWeaponHolder");
